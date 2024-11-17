@@ -104,6 +104,18 @@
     let heroSlider = new Swiper ('.hero_slider', {
         direction: 'vertical',
         slidesPerView: 1,
+         breakpoints: {
+             0: {
+                    simulateTouch: false, // Disable mouse drag
+                    allowTouchMove: false, // Disable touch and drag
+                },
+                // For screens 480px and above
+            480: {
+                simulateTouch: true,  // Enable mouse drag
+                allowTouchMove: true, // Enable touch and drag
+            },
+         },
+       
         // loop: true,
         // autoplay: {
         //     delay: 5000,
