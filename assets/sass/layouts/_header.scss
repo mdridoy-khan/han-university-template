@@ -13,16 +13,18 @@
 
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 2024;
-    transition: all .3s ease;
-    background: var(--mr-color-black);
+   
 
     // primary header style here
     &.primary_header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 2024;
+        background: var(--mr-color-black);
+        transition: transform .5s cubic-bezier(0.05, 0, 0.002, 1);
+        transform: translateY(-100%);
         .navbar {
             padding: 0;
             display: none;
@@ -217,7 +219,7 @@ header {
         // header sticky css
         &.sticky {           
             &.primary_header {
-                margin-top: -82px;
+                transform: translateY(0);
             }
         }
     }

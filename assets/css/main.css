@@ -695,14 +695,15 @@ textarea.form-control:focus {
   src: url("https://db.onlinewebfonts.com/t/0389bdf50d5b601e5ab18443145f4e6d.eot");
   src: url("https://db.onlinewebfonts.com/t/0389bdf50d5b601e5ab18443145f4e6d.eot?#iefix") format("embedded-opentype"), url("https://db.onlinewebfonts.com/t/0389bdf50d5b601e5ab18443145f4e6d.woff2") format("woff2"), url("https://db.onlinewebfonts.com/t/0389bdf50d5b601e5ab18443145f4e6d.woff") format("woff"), url("https://db.onlinewebfonts.com/t/0389bdf50d5b601e5ab18443145f4e6d.ttf") format("truetype"), url("https://db.onlinewebfonts.com/t/0389bdf50d5b601e5ab18443145f4e6d.svg#Avenir Next W04 Demi") format("svg");
 }
-header {
+header.primary_header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 2024;
-  transition: all 0.3s ease;
   background: var(--mr-color-black);
+  transition: transform 0.5s cubic-bezier(0.05, 0, 0.002, 1);
+  transform: translateY(-100%);
 }
 header.primary_header .navbar {
   padding: 0;
@@ -878,7 +879,7 @@ header.primary_header .mobile_header .search_icon {
   }
 }
 header.primary_header.sticky.primary_header {
-  margin-top: -82px;
+  transform: translateY(0);
 }
 
 .offcanvas-menu, .footer_menus {

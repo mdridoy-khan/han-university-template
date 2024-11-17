@@ -67,14 +67,14 @@
     /* ============================================================ */
     /* StickyHeader
     /* ============================================================ */
-    var fixed_top = $("header");
-    $(window).on('scroll', function () {
-        if ($(this).scrollTop() > 30) {
-            fixed_top.addClass("sticky");
-        } else {
-            fixed_top.removeClass("sticky");
-        }
-    });
+    // var fixed_top = $("header");
+    // $(window).on('scroll', function () {
+    //     if ($(this).scrollTop() > 30) {
+    //         fixed_top.addClass("sticky");
+    //     } else {
+    //         fixed_top.removeClass("sticky");
+    //     }
+    // });
 
     /* ============================================================ */
     /* Scroll Top

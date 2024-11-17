@@ -61,7 +61,7 @@
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     Start Site Header
     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-    <header class="primary_header">
+    <header class="primary_header sticky">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <div class="header-wrapper d-flex align-items-center justify-content-between w-100">        
@@ -1650,6 +1650,37 @@
         } else {
             console.warn("No elements found with the class 'badge__char'.");
         }
+
+    // Select the header element
+    const header = document.querySelector('header');
+
+    // Track the last scroll position
+    let lastScrollTop = 0;
+    const threshold = 250; // Hide the header after scrolling down 200px
+
+    window.addEventListener('scroll', () => {
+        // Get the current scroll position
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+        // Check if the user is at the bottom of the page
+        const isBottom = (window.innerHeight + window.scrollY) >= document.body.offsetHeight;
+
+        if (isBottom) {
+            // Add the active class when at the bottom
+            header.classList.add('sticky');
+        } else if (scrollTop > lastScrollTop && scrollTop > threshold) {
+            // Remove the active class when scrolling down past 200px
+            header.classList.remove('sticky');
+        } else if (scrollTop < lastScrollTop) {
+            // Add the active class when scrolling up
+            header.classList.add('sticky');
+        }
+
+        // Update the last scroll position
+        lastScrollTop = scrollTop;
+    });
+
+
 
     </script>
 
