@@ -1,0 +1,16 @@
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <circle id="path-1" cx="12" cy="12" r="12"></circle>
+    </defs>
+    <g id="--------Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="German">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <g id="Oval"></g>
+            <path d="M22.2025781,0 L1.79742187,0 C0.804703125,0 -2.66453526e-14,1.2282321 -2.66453526e-14,2.74343564 L-2.66453526e-14,8 L24,8 L24,2.74343564 C24,1.2282321 23.1952969,0 22.2025781,0 Z" id="Path" fill="#454545" mask="url(#mask-2)"></path>
+            <path d="M-2.66453526e-14,21.2565644 C-2.66453526e-14,22.7716964 0.804703125,24 1.79742187,24 L22.2025781,24 C23.19525,24 24,22.7717679 24,21.2565644 L24,16 L-2.66453526e-14,16 L-2.66453526e-14,21.2565644 Z" id="Path" fill="#F8E260" mask="url(#mask-2)"></path>
+            <rect id="Rectangle" fill="#EB5241" mask="url(#mask-2)" x="-2.66453526e-14" y="8" width="24" height="8"></rect>
+        </g>
+    </g>
+</svg>

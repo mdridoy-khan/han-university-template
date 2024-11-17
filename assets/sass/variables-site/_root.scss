@@ -1,0 +1,35 @@
+:root{
+    /* Global typography */
+    --mr-global-font-family       : "Avenir Next W04 Demi";
+    --mr-global-font-size         : 1rem;
+    --mr-global-font-weight       : 400;
+    --mr-global-font-style        : normal;
+    --mr-global-line-height       : 1.7;
+    --mr-global-text-transform    : none;
+    --mr-global-letter-spacing    : 0;
+    --mr-global-word-spacing      : 0;
+  
+    /** Heading Typography **/
+    --mr-heading-font-family      : "Roboto", serif;
+    --mr-heading-font-weight      : 400;
+    --mr-heading-font-style       : normal;
+    --mr-heading-line-height      : 1.4 ;
+    --mr-heading-text-transform   : none;
+    --mr-heading-letter-spacing   : 0;
+    --mr-heading-word-spacing     : 0;
+    --mr-rtl-font                 : 'Cairo', sans-serif;
+    --mr-scripts-font             : "Teko", sans-serif; 
+    --mr-fontAwesome              : "Font Awesome 5 Pro";
+  
+    /** Colors **/
+    --mr-color-primary        : #e50056;
+    --mr-color-primary-500    : #b70045;
+    --mr-color-secondary      : #454545;
+    --mr-color-white          : #ffffff;
+    --mr-color-white-200      : #F7F8F9;
+    --mr-color-black          : #000000;
+    --mr-color-black-300      : #454545;
+    --mr-color-gray           : #FBF7F2;
+}
+
+  

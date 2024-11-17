@@ -1,0 +1,35 @@
+// section title style here
+.section-title {
+    .title {
+        font-size: 24px;
+        margin-bottom: .75rem;
+        line-height: 1.2;
+        color: var(--mr-color-black);
+        padding-left: 24px;
+        font-weight: 700;
+        @include md-up {
+            padding-left: 0;
+        }
+        @include lg-up {
+            font-size: 34px;
+            margin-bottom: 2rem;
+        }
+    }
+    .text {
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 1em;
+        max-width: 660px;
+        color: var(--mr-color-secondary);
+        @include lg-up {
+            font-size: 18px;
+        }
+        a {
+            color: var(--mr-color-primary);
+            text-decoration: underline;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+}

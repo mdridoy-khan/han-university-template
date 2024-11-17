@@ -1,0 +1,47 @@
+// study card style here
+.study-card {
+    position: relative;
+    transition: all .3s ease;
+    .image {
+        display: block;
+        overflow: hidden;
+        img {
+            width: 100%;
+            transition: all .5s ease;
+        }
+    }
+    .text {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--mr-color-white);
+        font-size: 20px;
+        padding: 20px 32px;
+        background: rgba(0, 0, 0, .65);
+        line-height: 1.2;
+        transition: background-color .5s cubic-bezier(0.05, 0, 0.002, 1);
+        @include lg-up {
+            font-size: 24px;
+        }
+        i {
+            width: 16px;
+            height: 16px;
+            font-size: 1rem;
+        }
+    }
+    &:hover {
+        .image {
+            img {
+                transform: scale(1.05);
+            }
+        }
+        .text {
+            background-color: var(--mr-color-black);
+        }
+    }
+}

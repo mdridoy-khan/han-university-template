@@ -1,0 +1,87 @@
+// scroll to top button
+.topbutton {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: var(--mr-color-primary);
+    width: 40px;
+    height: 40px;
+    @include flex-center;
+    z-index: 2024;
+    color: white;
+    transition: all .15s linear;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(50px);
+    @include lg-up {
+        width: 50px;
+        height: 50px;
+        bottom: 40px;
+        right: 40px;
+    }
+    &:hover {
+        background-color: var(--mr-color-primary);
+        color: white;
+    }
+    &.btn-show {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+}
+
+// primary button
+.primary-button {
+    padding: 10px 14px;
+    border: 2px solid var(--mr-color-primary);
+    display: flex;
+    align-items: center;
+    background: var(--mr-color-primary);
+    gap: 8px;
+    color: var(--mr-color-white);
+    transition: all .3s ease;
+    font-size: 14px;
+    @include lg-up {
+        padding: 16px 24px;
+        font-size: 1rem;
+    }
+    i {
+        font-weight: 600;
+    }
+    &:hover {
+        color: var(--mr-color-white);
+        background: var(--mr-color-primary-500);
+        border-color: var(--mr-color-primary-500);
+        span { 
+            text-decoration: underline;
+        }
+    }
+}
+
+// secondary button
+.secondary-button {
+    padding: 10px 14px;
+    border: 2px solid var(--mr-color-white);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--mr-color-white);
+    transition: all .3s ease;
+    font-size: 14px;
+    @include lg-up {
+        padding: 16px 24px;
+        font-size: 1rem;
+    }
+    i {
+        font-weight: 600;
+    }
+
+    &:hover {
+        color: var(--mr-color-black);
+        background: var(--mr-color-white);
+
+        span {
+            text-decoration: underline;
+        }
+    }
+}
