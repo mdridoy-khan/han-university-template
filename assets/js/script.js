@@ -78,7 +78,7 @@
         return false;
     });
 
-
+    // search form hide and show activation code 
     document.addEventListener("DOMContentLoaded", () => {
         const formWrapper = document.querySelector(".form_wrapper");
         const closeForm = document.querySelector(".close-form");
@@ -104,7 +104,7 @@
 
 
 
-    // product slider activation
+    // hero slider activation
     let heroSlider = new Swiper ('.hero_slider', {
         direction: 'vertical',
         slidesPerView: 1,
