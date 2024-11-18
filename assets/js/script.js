@@ -55,26 +55,12 @@
         '.offcanvas-menu, .overlay-menu, body'
     );
 
-    $('.offcanvas-menu .menu-item-has-children').on('click', '.menu-link', function() {
+    $('.offcanvas-menu, .footer_mobile_menus .menu-item-has-children').on('click', '.menu-link', function() {
         var $this = $(this);
         $this.toggleClass('active').next('.sub-menu').slideToggle();
         $this.parent().siblings().find('.sub-menu').slideUp().end().find('.menu-link').removeClass('active');
     });
     /* Mobile menu End */
-
-
-    
-    /* ============================================================ */
-    /* StickyHeader
-    /* ============================================================ */
-    // var fixed_top = $("header");
-    // $(window).on('scroll', function () {
-    //     if ($(this).scrollTop() > 30) {
-    //         fixed_top.addClass("sticky");
-    //     } else {
-    //         fixed_top.removeClass("sticky");
-    //     }
-    // });
 
     /* ============================================================ */
     /* Scroll Top
@@ -105,23 +91,15 @@
         direction: 'vertical',
         slidesPerView: 1,
          breakpoints: {
-             0: {
-                    simulateTouch: false, // Disable mouse drag
-                    allowTouchMove: false, // Disable touch and drag
-                },
-                // For screens 480px and above
-            480: {
-                simulateTouch: true,  // Enable mouse drag
-                allowTouchMove: true, // Enable touch and drag
+            0: {
+                simulateTouch: false, 
+                allowTouchMove: false, 
+            },
+            780: {
+                simulateTouch: true,  
+                allowTouchMove: true, 
             },
          },
-       
-        // loop: true,
-        // autoplay: {
-        //     delay: 5000,
-        //     reverseDirection: true,
-        //     disableOnInteraction: false,
-        // },
         pagination: {
             el: ".swiper-pagination",
           clickable: true,
@@ -134,6 +112,16 @@
         slidesPerView: 3,
         spaceBetween: 24,
         loop: false,
+        breakpoints: {
+            0: {
+                simulateTouch: false, 
+                allowTouchMove: false, 
+            },
+            780: {
+                simulateTouch: true,  
+                allowTouchMove: true, 
+            },
+        },
         navigation: {
             nextEl: ".controller_buttons .swiper-button-next",
             prevEl: ".controller_buttons .swiper-button-prev",

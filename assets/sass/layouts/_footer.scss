@@ -100,16 +100,82 @@
                 }
             }
         }
-        .footer_menus {
+        .footer_mobile_menus {
+            background-color: var(--mr-color-black);
             width: 100%;
-            left: 0;
-            right: 0;
-            position: inherit;
+            transition: all .2s ease-in-out;
+            color: var(--mr-color-white);
+
             @include md-up {
                 display: none;
             }
+
             .menu-body {
-                padding: 0;
+                ul {
+                    li {
+                        border-top: 1px solid var(--mr-color-secondary);
+
+                        a {
+                            @include flex-between;
+                            padding: 1rem 0;
+                            font-size: 1.125rem;
+                        }
+
+                        &:last-child {
+                            border-bottom: 1px solid var(--mr-color-secondary);
+                        }
+
+                        &.nav-item {
+                            border: 0;
+                            margin-left: .5rem;
+
+                            a {
+                                padding: .375rem 0;
+                                font-size: 16px;
+                            }
+                        }
+                    }
+                }
+
+                .menu-item-has-children {
+                    >a {
+                        &::after {
+                            content: '\f078';
+                            width: 32px;
+                            height: 32px;
+                            @include flex-center;
+                            font-family: var(--mr-fontAwesome);
+                            font-size: 16px;
+                            transition: all .15s ease;
+                            background: var(--mr-color-secondary);
+                        }
+
+                        &.active {
+                            color: var(--mr-color-white);
+
+                            &::after {
+                                content: '\f077';
+                                border-color: var(--mr-color-primary);
+                            }
+                            // .sub-menu {
+                            //     display: block;
+                            // }
+                        }
+                    }
+                }
+
+                .sub-menu {
+                    display: none;
+                    padding-bottom: 2rem;
+                }
+
+                .input-group {
+                    border: 1px solid var(--mr-color-secondary);
+
+                    .form-control {
+                        padding: 8px 16px;
+                    }
+                }
             }
         }
     }
