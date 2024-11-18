@@ -13,13 +13,6 @@
 (function ($) {
     "use strict";
 
-    /* ============================================================ */
-    /* PRELOADER START
-    /* ============================================================ */
-    $(document).ready(function($) {
-        $(".preloader").fadeOut();
-    });
-    /* Preloader End */
 
     /* ============================================================ */
     /* MOBILE MENU START
@@ -51,7 +44,7 @@
         });
     }
     offcanvas_menu(
-        'header .sidebar_toggler, .close-menu ',
+        'header .sidebar_toggler, .menu-trigger ',
         '.offcanvas-menu, .overlay-menu, body'
     );
 
@@ -89,23 +82,22 @@
     document.addEventListener("DOMContentLoaded", () => {
         const formWrapper = document.querySelector(".form_wrapper");
         const closeForm = document.querySelector(".close-form");
-        const openFormButton = document.querySelector(".serach_button"); // Button to open the form
+        const openFormButton = document.querySelector(".serach_button");
+        const openSearchBox = document.querySelector(".search_button");
 
-        // Show the form and disable background scroll
         const showForm = () => {
-            formWrapper.style.display = "block"; // Show the form
-            document.body.style.overflow = "hidden"; // Disable body scrolling
+            formWrapper.style.display = "block"; 
+            document.body.style.overflow = "hidden";
         };
 
-        // Hide the form and enable background scroll
         const hideForm = () => {
-            formWrapper.style.display = "none"; // Hide the form
-            document.body.style.overflow = ""; // Reset body scrolling
+            formWrapper.style.display = "none"; 
+            document.body.style.overflow = "";
         };
 
-        // Event Listeners
-        openFormButton.addEventListener("click", showForm); // Button to open the form
-        closeForm.addEventListener("click", hideForm); // Button to close the form
+        openFormButton.addEventListener("click", showForm); 
+        openSearchBox.addEventListener("click", showForm); 
+        closeForm.addEventListener("click", hideForm); 
     });
 
 
@@ -116,7 +108,10 @@
     let heroSlider = new Swiper ('.hero_slider', {
         direction: 'vertical',
         slidesPerView: 1,
-         breakpoints: {
+        autoplay: {
+            delay: 5000,
+        },
+        breakpoints: {
             0: {
                 simulateTouch: false, 
                 allowTouchMove: false, 
@@ -138,6 +133,9 @@
         slidesPerView: 3,
         spaceBetween: 24,
         loop: false,
+        autoplay: {
+            delay: 5000,
+        },
         breakpoints: {
             0: {
                 simulateTouch: false, 

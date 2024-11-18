@@ -13,6 +13,12 @@
 .hero_area {
     margin-bottom: 2rem;
     .container {
+        @include md-down {
+            max-width: 100%;
+            padding: 0 20px;
+        }
+    }
+    .container {
         &.blocks-wrapper {
             @include xl-down {
                 padding: 0;
@@ -22,9 +28,9 @@
     }
     .hero_slider {
         height: 600px;
-        @include md-up {
-            height: 750px;
-        }
+        // @include md-up {
+        //     height: 750px;
+        // }
         @include lg-up {
             height: 850px;
         }
@@ -114,10 +120,10 @@
             }
             @include lg-up {
                 top: 40%;
+                padding: 1rem 1.25rem;
             }
             @include xxl-up {
                 top: 50%;
-                padding: 1rem 1.25rem;
             }
             .swiper-pagination-bullet {
                 position: relative;
@@ -431,14 +437,27 @@
     @include lg-up {
         margin-top: 120px;
     }
+    .container {
+        @include md-down {
+            max-width: 100%;
+            padding: 0 20px;
+        }
+    }
     .service_card {
         display: grid;
         grid-template-columns: 1fr;
         @include md-up {
-            grid-template-columns: 185px 1fr 1fr 1fr;
+            grid-template-columns: 185px 1fr;
         }
         @include lg-up {
-            grid-template-columns: 300px 1fr 1fr 1fr;
+            grid-template-columns: 300px 1fr;
+        }
+    }
+    .card_group {
+        display: grid;
+        grid-template-columns: 1fr;
+        @include sm-up {
+            grid-template-columns: 1fr 1fr 1fr;
         }
     }
     .card-item {
@@ -449,6 +468,16 @@
         &.border-left {
             padding: 24px 0;
             border-bottom: 1px solid #e3e3e3;
+            @include sm-up {
+                border-bottom: 0;
+                padding: 0 24px 0 0;
+            }
+            & + .border-left {
+                @include sm-up {
+                    border-left: 1px solid #e3e3e3;
+                    padding-left: 1rem;
+                }
+            }
             @include md-up {
                 border-left: 1px solid #e3e3e3;
                 padding: 8px 16px;
@@ -461,12 +490,19 @@
             line-height: 1.2;
             color: var(--mr-color-black);
             border-bottom: 1px solid #e3e3e3;
-            @include md-up {
+            @include sm-up {
                 border-bottom: 0;
+                padding-bottom: 2rem;
+            }
+            @include md-up {
+                padding-bottom: 1rem;
             }
             &.primary-color {
                 color: var(--mr-color-primary);
                 border: 0;
+                @include sm-up {
+                    padding-bottom: 1rem;
+                }
             }
             @include lg-up {
                 margin-bottom: 1rem;
@@ -541,6 +577,12 @@
             height: 460px;
             left: 23%;
             top: 35px;
+        }
+    }
+    .container {
+        @include md-down {
+            max-width: 100%;
+            padding: 0 20px;
         }
     }
     .section-title {
@@ -787,6 +829,12 @@
     @include md-up {
         margin-bottom: 48px;
     }
+    .container {
+        @include md-down {
+            max-width: 100%;
+            padding: 0 20px;
+        }
+    }
     .section-title {
         .title {
             padding-left: 0;
@@ -802,7 +850,7 @@
         }
     }
     .section-title {
-        @include lg-up {
+        @include md-up {
             padding-bottom: 15px;
         }
         .title {
