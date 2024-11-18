@@ -84,6 +84,8 @@
                     line-height: 1.2;
                     color: var(--mr-color-white);
                     display: block;
+                    font-family: var(--mr-heading-font-family);
+                    font-weight: 700;
                     &:hover {
                         text-decoration: underline;
                     }
@@ -188,11 +190,14 @@
     // copyrigh area style here
     .copyright_area {
         padding: 32px 0;
+        flex-direction: column;
+
         @include md-up {
             padding: 24px 0;
-        }
-        @include md-up {
             border-top: 1px solid var(--mr-color-secondary);
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
         }
         .social-icons {
             display: flex;
@@ -213,6 +218,12 @@
         }
         .copyright-content {
             margin-top: 1rem;
+            gap: 1rem;
+            display: flex;
+            flex-direction: column;
+            @include md-up {
+                flex-direction: row;
+            }
             @include lg-up {
                 margin-top: 0;
             }
@@ -232,12 +243,14 @@
             .link {
                 display: inline-block;
                 font-size: 14px;
-                @include md-up {
-                    font-size: 1rem;
-                }
                 &:hover {
                     text-decoration: underline;
                 }
+            }
+            .copyrigh-text {
+                color: var(--mr-color-white);
+                font-size: 14px;
+                line-height: 1.5;
             }
         }
     }

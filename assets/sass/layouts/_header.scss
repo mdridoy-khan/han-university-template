@@ -386,7 +386,6 @@ header {
             height: 28px;
             position: relative;
             top: -3px;
-            left: 8.5rem;
             a {
                 display: block;
                 width: 100%;
@@ -420,6 +419,14 @@ header {
                     @include flex-between;
                     padding: 1rem 0;
                     font-size: 1.125rem;
+                    &.user_account {
+                        button {
+                            color: var(--mr-color-white);
+                            display: flex;
+                            align-items: center;
+                            gap: 1rem;
+                        }
+                    }
                 }
                 &:last-child {
                     border-bottom: 1px solid var(--mr-color-secondary);
@@ -456,6 +463,23 @@ header {
             }
             &.choose_language {
                 margin-top: 2rem;
+                a {
+                    span {
+                        color: var(--mr-color-white);
+                        display: flex;
+                        align-items: center;
+                        gap: 1rem;
+                    }
+                }
+                .sub-menu {
+                    button {
+                        gap: .75rem;
+                    }
+                    img {
+                        width: 1.125rem;
+                        height: 1.125rem;
+                    }
+                }
             }
         }
         .sub-menu {

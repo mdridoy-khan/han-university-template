@@ -343,6 +343,9 @@
     </div>
     <div class="offcanvas-menu">
         <div class="menu-header">
+            <div class="blank_div">
+
+            </div>
             <!-- logo -->
             <div class="logo">
                 <a href="index.html">
@@ -534,33 +537,36 @@
                 <!-- choose language -->
                 <li class="menu-item menu-item-has-children choose_language">
                     <a href="javascript:void(0)" class="menu-link">
-                        <button>
+                        <span>
                             <img src="assets/images/header/netherlands.svg" alt="netherlands icon">
-                            NL
-                        </button>
+                            Nederlands (NL)
+                        </span>
                     </a>
                     <ul class="sub-menu">
                         <li class="nav-item">
                             <a href="#">
-                                <button>
+                                <span>
                                     <img src="assets/images/header/english.svg" alt="english flag icon">
-                                    English
-                                </button>
+                                    English (EN)
+                                </span>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="#">
-                                <button>
+                                <span>
                                     <img src="assets/images/header/german.svg" alt="german flag icon">
-                                    Deutsch
-                                </button>
+                                    Deutsch (DE)
+                                </span>
                             </a>
                         </li>
                     </ul>
                 </li>
                 <li class="menu-item">
-                    <a href="#" class="menu-link">
-                        HAN Account
+                    <a href="javascript:void(0)" class="menu-link user_account">
+                        <span>
+                            <i class="far fa-user"></i>
+                            Inloggen
+                        </span>
                     </a>
                 </li>
             </ul>
@@ -1232,6 +1238,67 @@
             </section>
             <!--~~./ End Hero Area ~~-->
 
+            <!-- header search form -->
+            <div class="form_wrapper">
+                <div class="form_topbar">
+                    <div class="container">
+                        <form action="#" class="search_form_body">
+                            <fieldset class="form_group">
+                                <span>
+                                    <i class="fas fa-search"></i>
+                                </span>
+                                <input type="text" name="search" id="search" placeholder="Zoek enn opleaiding, cursus etc."
+                                    aria-label="search form body">
+                            </fieldset>
+                            <button class="close-form">
+                                <i class="fal fa-times"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="body_wrapper">
+                    <div class="container">
+                        <div class="form_body_content">
+                            <div class="suggesties_content">
+                                <span>
+                                    Suggesties
+                                </span>
+                                <a href="#" class="seggest_link d-flex align-items-center">
+                                    <span>
+                                        Alle opleidingen
+                                    </span>
+                                    <i class="fal fa-arrow-right"></i>
+                                </a>
+                                <a href="#" class="seggest_link d-flex align-items-center">
+                                    <span>
+                                        Open dagen
+                                    </span>
+                                    <i class="fal fa-arrow-right"></i>
+                                </a>
+                                <a href="#" class="seggest_link d-flex align-items-center">
+                                    <span>
+                                        Vakanties
+                                    </span>
+                                    <i class="fal fa-arrow-right"></i>
+                                </a>
+                                <a href="#" class="seggest_link d-flex align-items-center">
+                                    <span>
+                                        Bedrijven
+                                    </span>
+                                    <i class="fal fa-arrow-right"></i>
+                                </a>
+                                <a href="#" class="seggest_link d-flex align-items-center">
+                                    <span>
+                                        Contact
+                                    </span>
+                                    <i class="fal fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             
         </main>
 
@@ -1614,7 +1681,7 @@
                 </div>
             </div>
             <!-- copyright area -->
-            <div class="copyright_area d-flex align-items-center justify-content-between flex-wrap">
+            <div class="copyright_area d-flex">
                 <!-- social icons -->
                 <div class="social-icons">
                     <a href="#" class="icon">
@@ -1651,10 +1718,10 @@
                                 Privacy
                             </a>
                         </li>
-                        <li class="item copyrigh-text">
-                            © 2024 HAN University of Applied Sciences
-                        </li>
                     </ul>
+                    <div class="copyrigh-text">
+                        © 2024 HAN University of Applied Sciences
+                    </div>
                 </div>
             </div>
         </div>
@@ -1717,66 +1784,5 @@
     </script>
 
 </body>
-
-<!-- header search form -->
-<div class="form_wrapper">
-    <div class="form_topbar">
-        <div class="container">
-            <form action="#" class="search_form_body">
-                <fieldset class="form_group">
-                    <span>
-                        <i class="fas fa-search"></i>
-                    </span>
-                    <input type="text" name="search" id="search" placeholder="Zoek enn opleaiding, cursus etc."
-                        aria-label="search form body">
-                </fieldset>
-                <button class="close-form">
-                    <i class="fal fa-times"></i>
-                </button>
-            </form>
-        </div>
-    </div>
-    <div class="body_wrapper">
-        <div class="container">
-            <div class="form_body_content">
-                <div class="suggesties_content">
-                    <span>
-                        Suggesties
-                    </span>
-                    <a href="#" class="seggest_link d-flex align-items-center">
-                        <span>
-                            Alle opleidingen
-                        </span>
-                        <i class="fal fa-arrow-right"></i>
-                    </a>
-                    <a href="#" class="seggest_link d-flex align-items-center">
-                        <span>
-                            Open dagen
-                        </span>
-                        <i class="fal fa-arrow-right"></i>
-                    </a>
-                    <a href="#" class="seggest_link d-flex align-items-center">
-                        <span>
-                            Vakanties
-                        </span>
-                        <i class="fal fa-arrow-right"></i>
-                    </a>
-                    <a href="#" class="seggest_link d-flex align-items-center">
-                        <span>
-                            Bedrijven
-                        </span>
-                        <i class="fal fa-arrow-right"></i>
-                    </a>
-                    <a href="#" class="seggest_link d-flex align-items-center">
-                        <span>
-                            Contact
-                        </span>
-                        <i class="fal fa-arrow-right"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
 </html>

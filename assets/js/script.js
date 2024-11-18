@@ -85,23 +85,6 @@
         return false;
     });
 
-    // document.addEventListener("DOMContentLoaded", () => {
-    //     const searchButton = document.querySelector(".serach_button");
-    //     const closeButton = document.querySelector(".close-form");
-    //     const formWrapper = document.querySelector(".form_wrapper");
-
-    //     // Search button click event
-    //     searchButton.addEventListener("click", () => {
-    //         formWrapper.classList.add("active"); // Add "active" class
-    //     });
-
-    //     // Close button click event
-    //     closeButton.addEventListener("click", () => {
-    //         formWrapper.classList.remove("active"); // Remove "active" class
-    //     });
-    // });
-
-
 
     document.addEventListener("DOMContentLoaded", () => {
         const formWrapper = document.querySelector(".form_wrapper");
