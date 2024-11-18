@@ -327,7 +327,7 @@
             </div>
             <!-- site icon -->
             <div class="search-icon">
-                <button type="button" class="search_icon">
+                <button type="button" class="serach_button">
                     <i class="fas fa-search"></i>
                 </button>
             </div>
@@ -525,6 +525,38 @@
                     <a href="#" class="menu-link">
                         Contact
                     </a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-link">
+                        HAN Account
+                    </a>
+                </li>
+                <!-- choose language -->
+                <li class="menu-item menu-item-has-children choose_language">
+                    <a href="javascript:void(0)" class="menu-link">
+                        <button>
+                            <img src="assets/images/header/netherlands.svg" alt="netherlands icon">
+                            NL
+                        </button>
+                    </a>
+                    <ul class="sub-menu">
+                        <li class="nav-item">
+                            <a href="#">
+                                <button>
+                                    <img src="assets/images/header/english.svg" alt="english flag icon">
+                                    English
+                                </button>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">
+                                <button>
+                                    <img src="assets/images/header/german.svg" alt="german flag icon">
+                                    Deutsch
+                                </button>
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="menu-item">
                     <a href="#" class="menu-link">
@@ -1200,9 +1232,9 @@
             </section>
             <!--~~./ End Hero Area ~~-->
 
+            
+        </main>
 
-
-    </main>
     <!--~~./ end main ~~-->
 
     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1685,4 +1717,66 @@
     </script>
 
 </body>
+
+<!-- header search form -->
+<div class="form_wrapper">
+    <div class="form_topbar">
+        <div class="container">
+            <form action="#" class="search_form_body">
+                <fieldset class="form_group">
+                    <span>
+                        <i class="fas fa-search"></i>
+                    </span>
+                    <input type="text" name="search" id="search" placeholder="Zoek enn opleaiding, cursus etc."
+                        aria-label="search form body">
+                </fieldset>
+                <button class="close-form">
+                    <i class="fal fa-times"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="body_wrapper">
+        <div class="container">
+            <div class="form_body_content">
+                <div class="suggesties_content">
+                    <span>
+                        Suggesties
+                    </span>
+                    <a href="#" class="seggest_link d-flex align-items-center">
+                        <span>
+                            Alle opleidingen
+                        </span>
+                        <i class="fal fa-arrow-right"></i>
+                    </a>
+                    <a href="#" class="seggest_link d-flex align-items-center">
+                        <span>
+                            Open dagen
+                        </span>
+                        <i class="fal fa-arrow-right"></i>
+                    </a>
+                    <a href="#" class="seggest_link d-flex align-items-center">
+                        <span>
+                            Vakanties
+                        </span>
+                        <i class="fal fa-arrow-right"></i>
+                    </a>
+                    <a href="#" class="seggest_link d-flex align-items-center">
+                        <span>
+                            Bedrijven
+                        </span>
+                        <i class="fal fa-arrow-right"></i>
+                    </a>
+                    <a href="#" class="seggest_link d-flex align-items-center">
+                        <span>
+                            Contact
+                        </span>
+                        <i class="fal fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 </html>

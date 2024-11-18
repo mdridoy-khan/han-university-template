@@ -85,6 +85,49 @@
         return false;
     });
 
+    // document.addEventListener("DOMContentLoaded", () => {
+    //     const searchButton = document.querySelector(".serach_button");
+    //     const closeButton = document.querySelector(".close-form");
+    //     const formWrapper = document.querySelector(".form_wrapper");
+
+    //     // Search button click event
+    //     searchButton.addEventListener("click", () => {
+    //         formWrapper.classList.add("active"); // Add "active" class
+    //     });
+
+    //     // Close button click event
+    //     closeButton.addEventListener("click", () => {
+    //         formWrapper.classList.remove("active"); // Remove "active" class
+    //     });
+    // });
+
+
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const formWrapper = document.querySelector(".form_wrapper");
+        const closeForm = document.querySelector(".close-form");
+        const openFormButton = document.querySelector(".serach_button"); // Button to open the form
+
+        // Show the form and disable background scroll
+        const showForm = () => {
+            formWrapper.style.display = "block"; // Show the form
+            document.body.style.overflow = "hidden"; // Disable body scrolling
+        };
+
+        // Hide the form and enable background scroll
+        const hideForm = () => {
+            formWrapper.style.display = "none"; // Hide the form
+            document.body.style.overflow = ""; // Reset body scrolling
+        };
+
+        // Event Listeners
+        openFormButton.addEventListener("click", showForm); // Button to open the form
+        closeForm.addEventListener("click", hideForm); // Button to close the form
+    });
+
+
+
+
 
     // product slider activation
     let heroSlider = new Swiper ('.hero_slider', {

@@ -167,6 +167,12 @@
                 .sub-menu {
                     display: none;
                     padding-bottom: 2rem;
+                    a {
+                        transition: all .3s ease;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
                 }
 
                 .input-group {
